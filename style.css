@@ -6,8 +6,21 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 1.5;
 }
+/* navbar */
 .navbar-brand,.navbar-brand:hover,.nav-link,.nav-link:hover {
     color:#455954;
+}
+.navbar-toggler {
+    border:2px solid #f5f1ee86 !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.home {
+    visibility:hidden;
 }
 /* flipcard */
 .flip-card {
@@ -16,8 +29,8 @@ body {
     height: 250px;
     perspective: 1000px;
     position: absolute;
-    left:25%;
     top:25%;
+    left:25%;
 }
 .flip-card-inner {
     position: relative;
@@ -75,7 +88,26 @@ ul {
     text-align:right;
 }
 @media (max-width:768px) {
-    .flip-card {
-        width: 200px;
-        height: 150px;
+    .navbar {
+        background-color:#455954;
+    }
+    .navbar-brand,.navbar-brand:hover,.nav-link,.nav-link:hover {
+        color:#dfdbd8;
+    }
+    html,body {
+    background-image:none;
+    background-color:#f5f1ee;
+    }
+    .flip-card-front, .flip-card-back {
+        background-color:transparent;
+    }
+    .flip-card-inner {
+        box-shadow: none;
+    }
+    h3 {
+    display:none;
+    }
+    .home {
+    visibility:visible;
+    }
 }
