@@ -2,50 +2,73 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>my bio</title>
+        <title>Yann Chye</title>
+        <!--font-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+        <!--nav icon-->
+        <script src="https://use.fontawesome.com/2e53f2ab53.js"></script>
+        <!--my stylesheet-->
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!--bootstrap stylesheet-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-            <h1>Student Bio</h1>
-          </header>
-        
-          <main class="container">
-            <section id="main-bio">
-              <section id="figure">
-                <h2 id="bio-name">Yann C</h2>
-                <img id="bio-image" src="https://i.etsystatic.com/6193770/r/il/876f88/1049238475/il_570xN.1049238475_5kn9.jpg" alt="a plant">
-              </section>
-              <p><a href="http://www.catipsum.com/">Cat ipsum dolor sit amet, hide head under blanket so no one can see for if it fits i sits. 
-                Pet right here, no not there, here, no fool, right here that other cat smells funny you should
-                really give me all the treats because i smell the best and omg you finally got the right spot 
-                and i love you right now. Rub whiskers on bare skin act innocent hopped up on catnip humans,humans, 
-                humans oh how much they love us felines we are the center of attention they feed, they clean throwup 
-                on your pillow, for climb leg. Plop down in the middle where everybody walks chew foot murr i hate 
-                humans they are so annoying so lounge in doorway for good now the other hand, too leave dead animals 
-                as gifts. Cry louder at reflection find a way to fit in tiny box skid on floor, crash into wall , 
-                leave hair on owner's clothes reaches under door into adjacent room. Scratch me there, elevator 
-                butt making sure that fluff gets into the owner's eyes or the cat was chasing the mouse don't 
-                nosh on the birds so taco cat backwards spells taco cat. Human is washing you why halp oh the horror 
-                flee scratch hiss bite hide when guests come over. This cat happen now, it was too purr-fect!!! the 
-                fat cat sat on the mat bat away with paws and pet me pet me pet me pet me, bite, scratch, why are you 
-                petting me chase after silly colored fish toys around the house decide to want nothing to do with my 
-                owner today yet x meowwww. Skid on floor, crash into wall lie in the sink all day, yet bite nose of your 
-                human or sit on the laptop for you call this cat food for no, you can't close the door, i haven't decided 
-                whether or not i wanna go out is good you understand your place in my world. Play riveting piece on synthesizer 
-                keyboard morning beauty routine of licking self lick butt play time. Dismember a mouse and then regurgitate parts 
-                of it on the family room floor bleghbleghvomit my furball really tie the room together, or tuxedo cats always looking 
-                dapper. www.lipsum.com</a></p>
-            </section>
-        
-            <aside id="contact-info">
-              <h2>Contact Info</h2>
-              <ul>
-                <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-                <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-                <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-              </ul>
-            </aside>
-          </main>
+        <!--nav bar-->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <h3>YANN<br>CHYE</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href=#>CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=#>RESEARCH</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--flipcard-->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="container mx-auto cardfront">
+                        <h1>YANN CHYE</h1>
+                        <p>neuroscientist &nbsp; | &nbsp; data analyst</p>
+                        <hr>
+                        <p><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></p>
+                    </div>  
+                </div>
+                <div class="flip-card-back">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <ul><a href="mailto:yannying.chye@monash.edu" class="btn"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></ul>
+                                <ul><a href="https://www.linkedin.com/in/yann-chye-01/" class="btn"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></ul>
+                                <ul><a href="https://scholar.google.com/citations?user=8rgMh0QAAAAJ&hl=en" class="btn"><i class="fa fa-book fa-lg" aria-hidden="true"></i></a></ul>
+                                <ul><a href="https://github.com/YannChye" class="btn"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></ul>
+                            </div>
+                            <div class="col-9">
+                                <ul><a href="mailto:yannying.chye@monash.edu"  class="btn">yannying.chye@monash.edu</a></ul>
+                                <ul><a href="https://www.linkedin.com/in/yann-chye-01/" class="btn">linkedin.com/in/yann-chye-01</a></ul>
+                                <ul><a href="https://scholar.google.com/citations?user=8rgMh0QAAAAJ&hl=en" class="btn">Google Scholar</a></ul>
+                                <ul><a href="https://github.com/YannChye" class="btn">github.com/YannChye</a></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script> $('.flip-card .flip-card-inner').click(function() {
+            $(this).closest('.flip-card').toggleClass('hover');
+            $(this).css('transform, rotateY(180deg)');
+        })</script>
     </body>
 </html>

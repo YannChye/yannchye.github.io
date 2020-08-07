@@ -1,46 +1,81 @@
 body {
-    background-color: #efeee7;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    olor: #333333;
-    font-size:18px;
-    margin: 0;
-    padding: 0;
-    line-height: 150%
+    background-image: url(resources/image/background.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.5;
 }
-header {
-    background-color: #333333;
+.navbar-brand,.navbar-brand:hover,.nav-link,.nav-link:hover {
+    color:#455954;
 }
-h1 {
-    color:#eee;
-    font-size:28px;
-    margin: 3% 3% 3% 3%;
-    text-align:center
-}
-h2 {
-    font-size:24px;
-}
-.container {
-    widows: 1024px;
-    margin: 0 auto
-}
-#figure {
-    position: relative;
-  }
-#bio-name {
+/* flipcard */
+.flip-card {
+    background-color: transparent;
+    width: 420px;
+    height: 250px;
+    perspective: 1000px;
     position: absolute;
-    top: 100px;
-    left: 30px;
-  }
-#main-bio {
-    float:left;
-    width:70%;
+    left:25%;
+    top:25%;
 }
-#contact-info {
-    float:left;
-    width:30%;
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#bio-image {
-    float:left;
-    width:200px;
-    margin-right: 20px;
+.flip-card.hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#f5f1ee;
+    color: #333;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+.cardfront {
+    padding: 15%;
+    text-align: center;
+}
+.fa-angle-double-right {
+    position: absolute;
+    bottom:5%;
+    right:5%;
+}
+hr {
+    width:50%;
+    background-color: #333;
+    color: #333;
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+.btn, .btn:active, .btn:focus{
+    outline:none !important;
+    box-shadow:none !important;
+    height:2px;
+}
+.col-3,.col-9 {
+    top:40px;
+    left:5%;
+}
+.col-3 {
+    border-right:3px solid #acbabe73;
+}
+ul {
+    padding:0% 0% 0% 0%; 
+}
+.col-3 ul {
+    text-align:right;
+}
+@media (max-width:768px) {
+    .flip-card {
+        width: 200px;
+        height: 150px;
 }
