@@ -94,9 +94,10 @@ ul {
     .navbar-brand,.navbar-brand:hover,.nav-link,.nav-link:hover {
         color:#dfdbd8;
     }
-    html,body {
+    html,body,ul {
     background-image:none;
     background-color:#f5f1ee;
+    font-size:2vw;
     }
     .flip-card-front, .flip-card-back {
         background-color:transparent;
