@@ -1,0 +1,231 @@
+body {
+    background-image: url(../image/background.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Montserrat",sans-serif;
+    line-height: 1.5;
+}
+/* navbar */
+.navbar-brand,.navbar-brand:hover,.nav-link,.nav-link:hover {
+    color:#455954;
+}
+.navbar-toggler {
+    border:2px solid #f5f1ee86 !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.home {
+    visibility:hidden;
+}
+/* flipcard */
+.flip-card {
+    background-color: transparent;
+    width: 420px;
+    height: 250px;
+    perspective: 1000px;
+    position: absolute;
+    top:25%;
+    left:25%;
+}
+.project {
+    padding-bottom:170px;
+    height:300px;
+}
+.project-card {
+    background-color: transparent;
+    width: 30vw;
+    height: 30vw;
+    perspective: 1000px;
+    position: relative;
+    top:50%;
+    left:10%;
+    margin-bottom:25%;
+}
+.flip-card-inner, .project-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flip-card.hover .flip-card-inner, .project-card.hover .project-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back, .project-card-front, .project-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#f5f1ee;
+    color: #333;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+.cardfront {
+    padding: 15%;
+    text-align: center;
+}
+.fa-angle-double-right {
+    position: absolute;
+    bottom:5%;
+    right:5%;
+}
+hr {
+    width:50%;
+    background-color: #333;
+    color: #333;
+}
+.flip-card-back, .project-card-back {
+    transform: rotateY(180deg);
+}
+.project-card-back>.container {
+    margin:20px 20px 20px 20px !important;
+    font-size:auto;
+    width:80%;
+}
+.btn, .btn:active, .btn:focus{
+    outline:none !important;
+    box-shadow:none !important;
+    height:2px;
+}
+ul {
+    padding:0% 0% 0% 0%; 
+}
+.col-3 {
+    text-align:right;
+}
+body > div > div > div.flip-card-back > div > div > div.col-3 {
+    position: relative;
+    top:25px;
+    border-right: 3px solid #acbabe73;
+}
+.cv {
+    background:white;
+    height:auto;
+    width:90vw;
+    position: absolute;
+    top:5%;
+    left:5%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size:11px;
+    line-height: 1.3;
+    color: #444;
+    padding-bottom:15px;
+}
+.topcol {
+    border-bottom: 2px solid #acbabe73;
+}
+.cv .col-3 {
+    margin:0;
+    padding:0;
+}
+img {
+    width:90%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:5px;
+}
+.cv_contact a {
+    display:flex;
+    align-items:left;
+    text-align:left;
+    font-size:10px;
+}
+.col-9 {
+    left:10px;
+    top:20px;
+    width:80%;
+}
+.cvside {
+    background:#eef2f5;
+    height:auto;
+    padding:30px 10px 5px 8px;
+}
+b {
+    font-size:12px;
+}
+ul.professional li,ul.education li,ul.publication li  {
+    position:relative;
+    left:25px;
+    top:10px;
+    margin-bottom: 0; /* This overrides previously specified margin-bottom */
+    padding-bottom: 1em;
+    width:90%
+}
+
+ul.professional li:before,ul.education li:before,ul.publication li:before {
+    /* lines */
+    content:"";
+    position: absolute;
+    left: 24px; /* adjust manually */
+    border-left: 1px solid #455954;
+    height: 100%;
+    width: 1px;
+    top:8px;
+}
+ul.professional li:last-child:before,ul.education li:last-child:before,ul.publication li:last-child:before {
+   height: 0px;
+}
+.date {
+    float:left;
+    position:relative;
+    top:1em;
+    text-align:center;
+    font-size:10px;
+    width:36px;
+    min-height:40px;
+}
+.description {
+    position:relative;
+    left:37px;
+    width:70%
+}
+a:link,a:visited,a:hover,a:active {
+    text-decoration:none;
+    color:#455954;
+}
+@media (max-width:768px) {
+    .navbar {
+        background-color:#455954;
+    }
+    .navbar-brand,.navbar-brand:hover,.nav-link,.nav-link:hover {
+        color:#dfdbd8;
+    }
+    .contact {
+        display:none;
+    }
+    {
+        font-size:10px;
+    }
+    html,body {
+    background-image:none;
+    background-color:#f5f1ee;
+    }
+    html,body,ul {
+    font-size:auto;   
+    }
+    .flip-card{
+        left:10%;
+    }
+    .flip-card-front, .flip-card-back {
+        background-color:transparent;
+    }
+    .flip-card-inner {
+        box-shadow: none;
+    }
+    .navbar-brand>h3 {
+    display:none;
+    }
+    .home {
+    visibility:visible;
+    }
+    b {
+        font-size:10px;
+    }
+}

@@ -2,16 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Yann Chye</title>
         <!--font-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
         <!--nav icon-->
         <script src="https://use.fontawesome.com/2e53f2ab53.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
         <!--my stylesheet-->
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!--bootstrap stylesheet-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
     <body>
         <!--nav bar-->
@@ -28,10 +33,10 @@
                         <a class="nav-link home" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=#>CV</a>
+                        <a class="nav-link" href="resume.html">ABOUT ME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=#>RESEARCH</a>
+                        <a class="nav-link" href="projects.html">PROJECTS</a>
                     </li>
                 </ul>
             </div>
@@ -51,16 +56,16 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-3">
-                                <ul><a href="mailto:yannying.chye@monash.edu" class="btn"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></ul>
-                                <ul><a href="https://www.linkedin.com/in/yann-chye-01/" class="btn"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></ul>
-                                <ul><a href="https://scholar.google.com/citations?user=8rgMh0QAAAAJ&hl=en" class="btn"><i class="fa fa-book fa-lg" aria-hidden="true"></i></a></ul>
-                                <ul><a href="https://github.com/YannChye" class="btn"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></ul>
+                                <ul><a href="mailto:yannying.chye@monash.edu" target="_blank" class="btn"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></ul>
+                                <ul><a href="https://www.linkedin.com/in/yann-chye-01/" target="_blank" class="btn"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></ul>
+                                <ul><a href="https://scholar.google.com/citations?user=8rgMh0QAAAAJ&hl=en" target="_blank" class="btn"><i class="fa fa-book fa-lg" aria-hidden="true"></i></a></ul>
+                                <ul><a href="https://github.com/YannChye" target="_blank" class="btn"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></ul>
                             </div>
                             <div class="col-9">
-                                <ul><a href="mailto:yannying.chye@monash.edu"  class="btn">yannying.chye@monash.edu</a></ul>
-                                <ul><a href="https://www.linkedin.com/in/yann-chye-01/" class="btn">linkedin.com/in/yann-chye-01</a></ul>
-                                <ul><a href="https://scholar.google.com/citations?user=8rgMh0QAAAAJ&hl=en" class="btn">Google Scholar</a></ul>
-                                <ul><a href="https://github.com/YannChye" class="btn">github.com/YannChye</a></ul>
+                                <ul><a href="mailto:yannying.chye@monash.edu" target="_blank" class="btn">yannying.chye@monash.edu</a></ul>
+                                <ul><a href="https://www.linkedin.com/in/yann-chye-01/" target="_blank" class="btn">linkedin.com/in/yann-chye-01</a></ul>
+                                <ul><a href="https://scholar.google.com/citations?user=8rgMh0QAAAAJ&hl=en" target="_blank" class="btn">Google Scholar</a></ul>
+                                <ul><a href="https://github.com/YannChye" target="_blank" class="btn">github.com/YannChye</a></ul>
                             </div>
                         </div>
                     </div>
@@ -69,10 +74,7 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script> $('.flip-card .flip-card-inner').click(function() {
-            $(this).closest('.flip-card').toggleClass('hover');
-            $(this).css('transform, rotateY(180deg)');
-        })</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./resources/js/logic.js"></script>
     </body>
 </html>
