@@ -32,18 +32,23 @@ body {
     top:25%;
     left:25%;
 }
-.project {
-    padding-bottom:170px;
-    height:300px;
+.project1,.project2 {
+    height:30vw;
+    position: relative;
+    top:20vh;
+    left:10%;
+}
+.project3 {
+    height:30vw;
+    position: relative;
+    top:40vh;
+    left:10%;
 }
 .project-card {
     background-color: transparent;
     width: 30vw;
-    height: 30vw;
+    height: 28vw;
     perspective: 1000px;
-    position: relative;
-    top:50%;
-    left:10%;
     margin-bottom:25%;
 }
 .flip-card-inner, .project-card-inner {
@@ -186,9 +191,13 @@ ul.professional li:last-child:before,ul.education li:last-child:before,ul.public
     left:37px;
     width:70%
 }
-a:link,a:visited,a:hover,a:active {
+a:link,a:visited,a:active {
     text-decoration:none;
     color:#455954;
+}
+a:hover {
+    text-decoration:none;
+    color:lightslategrey;
 }
 @media (max-width:768px) {
     .navbar {
@@ -227,5 +236,31 @@ a:link,a:visited,a:hover,a:active {
     }
     b {
         font-size:10px;
+    }
+    .project-card {
+        background-color: transparent;
+        width: 70vw;
+        height: 70vw;
+        perspective: 1000px;
+        position: relative;
+        margin-bottom:25%;
+    }
+    .project1 {
+        height:30vw;
+        position: relative;
+        top:20vh;
+        left:10%;
+    }
+    .project2 {
+        height:30vw;
+        position: relative;
+        top:calc(30vw + 40vh);
+        left:10%;
+    }
+    .project3 {
+        height:30vw;
+        position: relative;
+        top:calc(60vw + 60vh);
+        left:10%;
     }
 }
