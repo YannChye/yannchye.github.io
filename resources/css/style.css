@@ -136,12 +136,6 @@ img {
     margin-right:auto;
     border-radius:5px;
 }
-.cv_contact a {
-    display:flex;
-    align-items:left;
-    text-align:left;
-    font-size:10px;
-}
 .col-9 {
     left:10px;
     top:20px;
@@ -151,6 +145,10 @@ img {
     background:#eef2f5;
     height:auto;
     padding:30px 10px 5px 8px;
+}
+.resume {
+    font-size:12px;
+    font-weight:bold;
 }
 b {
     font-size:12px;
