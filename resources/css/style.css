@@ -38,10 +38,16 @@ body {
     top:20vh;
     left:10%;
 }
-.project3 {
+.project3,.project4 {
     height:30vw;
     position: relative;
     top:40vh;
+    left:10%;
+}
+.project5 {
+    height:30vw;
+    position: relative;
+    top:60vh;
     left:10%;
 }
 .project-card {
